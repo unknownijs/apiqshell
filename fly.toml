@@ -1,0 +1,16 @@
+app = "apiqshell"
+primary_region = "gru"
+
+[build]
+
+[env]
+  PORT = "5550"
+
+[[services]]
+  internal_port = 5550
+  protocol = "tcp"
+
+  [[services.ports]]
+    port = 5550
+    handlers = ["tls"]
+    force_https = false
