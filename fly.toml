@@ -2,7 +2,7 @@ app = "apiqshell"
 primary_region = "gru"
 
 [build]
-  dockerfile = "Dockerfile"
+  builder = "paketobuildpacks/builder:full"
 
 [env]
   PORT = "5550"
